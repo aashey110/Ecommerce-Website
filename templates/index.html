@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}\
+<title>{{title}}</title>
+<style>
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+  }
+
+  .card-link:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+  }
+
+  .card-link:hover .card-body h6 {
+    color: #f85707; /* Change text color on hover */
+  }
+
+  .card-link:hover .card-body p {
+    color: #007bff; /* Change price color on hover */
+  }
+
+  .load-more-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #00a1c9;
+    border: 2px solid #00a1c9;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+  }
+
+  .load-more-btn:hover {
+    background-color: #00a1c9;
+    color: #fff;
+
+  }
+
+</style>
+
+<div class="container-sm">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static "images/9ff52f9b574ef5f34975e231516f3cbe.jpg_1200x1200q80.jpg_.webp" %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "images/26c828fb-6060-482f-89ef-029b57413c32_NP-1976-688.jpg_1200x1200q80.jpg_.webp" %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "images/be28474c-14e5-4269-89d9-14ce88c5dc82_NP-1976-688.jpg_1200x1200q80.jpg_.webp" %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "images/c3f2d87b-8ca4-468c-9f08-ca91e1171f18_NP-1976-688.jpg_1200x1200q80.jpg_.webp" %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "images/d2155204-b0f4-4635-8407-fb07daced653_NP-1976-688.png_1200x1200q80.png_.webp" %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">On Sale Now</th>
+        <th scope="col">Shop All products</th>
+      </tr>
+    </thead>
+</table>
+
+<div class="row row-cols-1 row-cols-md-6 g-4">
+  <div class="col">
+    <div class="card">
+      <a href="#" class="card-link">
+        <img src="{% static 'images/products/7f916d074f37701cc2328f803fdc408a.jpg_200x200q80.jpg_.webp' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Pebbles Nepal Gold Color Everyday Wear Earrings Set For Women | 12 Pairs |</h6>
+          <p class="card-text" style="color:#f85707;">Rs. 548</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <a href="#" class="card-link">
+        <img src="{% static 'images/products/7f916d074f37701cc2328f803fdc408a.jpg_200x200q80.jpg_.webp' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Pebbles Nepal Gold Color Everyday Wear Earrings Set For Women | 12 Pairs |</h6>
+          <p class="card-text" style="color:#f85707;">Rs. 548</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <a href="#" class="card-link">
+        <img src="{% static 'images/products/7f916d074f37701cc2328f803fdc408a.jpg_200x200q80.jpg_.webp' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Pebbles Nepal Gold Color Everyday Wear Earrings Set For Women | 12 Pairs |</h6>
+          <p class="card-text" style="color:#f85707;">Rs. 548</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <a href="#" class="card-link">
+        <img src="{% static 'images/products/7f916d074f37701cc2328f803fdc408a.jpg_200x200q80.jpg_.webp' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Pebbles Nepal Gold Color Everyday Wear Earrings Set For Women | 12 Pairs |</h6>
+          <p class="card-text" style="color:#f85707;">Rs. 548</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <a href="#" class="card-link">
+        <img src="{% static 'images/products/7f916d074f37701cc2328f803fdc408a.jpg_200x200q80.jpg_.webp' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Pebbles Nepal Gold Color Everyday Wear Earrings Set For Women | 12 Pairs |</h6>
+          <p class="card-text" style="color:#f85707;">Rs. 548</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <a href="#" class="card-link">
+        <img src="{% static 'images/products/7f916d074f37701cc2328f803fdc408a.jpg_200x200q80.jpg_.webp' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Pebbles Nepal Gold Color Everyday Wear Earrings Set For Women | 12 Pairs |</h6>
+          <p class="card-text" style="color:#f85707;">Rs. 548</p>
+        </div>
+      </a>
+    </div>
+  </div>
+<br>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">All our Products</th>
+    </tr>
+  </thead>
+</table>
+{% comment %} Including products {% endcomment %}
+  {% include "utilities/products.html" %}
+
+  <button class="load-more-btn" >Load More</button>
+
+</div>
+
+</div>
+{% endblock content %}
