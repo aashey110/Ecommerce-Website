@@ -18,8 +18,4 @@ def contact(request):
     }
     return render(request, 'contact.html', data)
 
-def categories(request):
-    data = {
-        "title" : 'Categories'
-    }
-    return render(request, "categories.html", data)
+
