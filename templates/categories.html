@@ -61,70 +61,12 @@
     <div class="container">
         <h2>Categories</h2>
         <div class="categories-grid">
+            {% for cate in categories %}
             <div class="category-item">
-                <img src="https://t4.ftcdn.net/jpg/03/64/41/07/360_F_364410756_Ev3WoDfNyxO9c9n4tYIsU5YBQWAP3UF8.jpg" alt="Switches">
-                <h3>Electronics</h3>
+                <img src="{{cate.image.url}}" alt="Switches">
+                <h3>{{cate.name}}</h3>
             </div>
-            <div class="category-item">
-                <img src="https://www.filantepizzeria.com.au/wp-content/uploads/2020/05/soft-drink-filante.jpg" alt="Airport Routers">
-                <h3>Drinks</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://static-01.daraz.com.np/p/330bd01167f4157ab216bd62b0a7e405.jpg" alt="Pregnancy Pillows">
-                <h3>Furniture</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2016/6/12/3/FNM070116_Penne-with-Vodka-Sauce-and-Mini-Meatballs-recipe_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1465939620872.jpeg" alt="Speaker Stands">
-                <h3>Food</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://people.com/thmb/g9O06lNL_a7SwQn1kEtsr8kIn5g=/1500x0/filters:no_upscale():max_bytes(200000):strip_icc()/stylewawards-d38f1195abc4460eb1ed53f00df5c616.jpg" alt="Dupattas Stoles & Shawls">
-                <h3>Fashion</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-RcreIDrpfebZGjROp6mIbVrw31weysJXEQ&s" alt="Trash Bags & Liners">
-                <h3>Toys</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://static.scientificamerican.com/sciam/cache/file/1DDFE633-2B85-468D-B28D05ADAE7D1AD8_source.jpg?w=1200" alt="Infant (0 - 6 months)">
-                <h3>Books</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://via.placeholder.com/100" alt="Tablets">
-                <h3>Tablets</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://via.placeholder.com/100" alt="Thermal & Shapewear">
-                <h3>Thermal & Shapewear</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://via.placeholder.com/100" alt="Bracelets">
-                <h3>Bracelets</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://via.placeholder.com/100" alt="Pillow Cases">
-                <h3>Pillow Cases</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://via.placeholder.com/100" alt="Rice">
-                <h3>Rice</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://via.placeholder.com/100" alt="Blood Pressure Monitors">
-                <h3>Blood Pressure Monitors</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://via.placeholder.com/100" alt="Hall Stands & Shelving">
-                <h3>Hall Stands & Shelving</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://via.placeholder.com/100" alt="Shower Caddies & Hangers">
-                <h3>Shower Caddies & Hangers</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://via.placeholder.com/100" alt="Habitats & Accessories">
-                <h3>Habitats & Accessories</h3>
-            </div>
+            {% endfor %}
         </div>
     </div>
 

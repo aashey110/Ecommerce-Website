@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 
-{% load static %}
-
 {% block content %}
 
 
 <title>{{title}}</title>
 
-{% include "utilities/products.html" %}
+{% load static %}
+<div class="container">
 
-{% endblock%}
+{% include "utilities/products.html" %}
+</div>
+{% endblock content%}

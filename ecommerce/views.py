@@ -1,8 +1,11 @@
 from django.shortcuts import render
+from product.models import Banners
 
 def index(request):
+    all_banners = Banners.objects.all()
     data = {
-        "title" : 'Home'
+        "title" : 'Home',
+        "banner": all_banners,
     }
     return render(request, 'index.html', data)
 
